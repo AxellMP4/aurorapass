@@ -7,22 +7,60 @@
     <meta name="description" content="Plateforme professionnelle de gestion d'accès événementiel avec QR codes sécurisés">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#007aff">
+    <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
     <div id="app">
-        <header>
-            <h1>AuroraPASS</h1>
-            <p>Plateforme d'accès événementiel professionnelle</p>
+        <header class="app-header">
+            <div class="logo-container">
+                <div class="logo-icon">⚡</div>
+                <h1>AuroraPASS</h1>
+            </div>
+            <p class="tagline">Plateforme d'accès événementiel professionnelle</p>
         </header>
         <main>
             <section class="welcome">
-                <h2>Bienvenue sur AuroraPASS</h2>
-                <p>La solution complète pour gérer les accès à vos événements avec des QR codes sécurisés.</p>
-                <button id="get-started-btn">Commencer gratuitement</button>
+                <div class="welcome-content">
+                    <h2>Bienvenue sur AuroraPASS</h2>
+                    <p class="welcome-subtitle">La solution complète pour gérer les accès à vos événements avec des QR codes sécurisés.</p>
+
+                    <div class="welcome-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">✨</div>
+                            <h3>Interface Apple-grade</h3>
+                            <p>Design élégant, animations satisfaisantes, expérience premium</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔐</div>
+                            <h3>Sécurité maximale</h3>
+                            <p>Authentification robuste, QR codes cryptographiquement signés</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Dashboard personnalisable</h3>
+                            <p>Onglets configurables, visualisations en temps réel</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h3>Totalement responsive</h3>
+                            <p>Parfait sur mobile, tablette et desktop</p>
+                        </div>
+                    </div>
+
+                    <div class="welcome-actions">
+                        <button id="get-started-btn" class="btn btn-primary btn-lg">Commencer gratuitement</button>
+                        <p class="welcome-note">Totalement gratuit - Hébergé sur Netlify & Supabase</p>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer>
+        <footer class="app-footer">
             <p>&copy; 2026 AuroraPASS. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Confidentialité</a> ·
+                <a href="#">Conditions</a> ·
+                <a href="#">Support</a>
+            </div>
         </footer>
     </div>
     <script src="/src/scripts/main.js" type="module"></script>

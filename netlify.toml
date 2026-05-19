@@ -2,8 +2,10 @@
   publish = "public"
   command = "echo \"No build step required for static site\""
 
-[redirects]
-  /* /index.html 200
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
