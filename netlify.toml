@@ -1,0 +1,21 @@
+[build]
+  publish = "public"
+  command = "echo \"No build step required for static site\""
+
+[redirects]
+  /* /index.html 200
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+[context.production]
+  command = "echo \"No build step\""
+  publish = "public"
+
+[context.deploy-preview]
+  command = "echo \"No build step\""
+  publish = "public"
+
+[context.branch]
+  command = "echo \"No build step\""
+  publish = "public"
